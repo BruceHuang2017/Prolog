@@ -1,0 +1,11 @@
+shell: gprolog to open prolog.
+prolog: "halt." to exit prolog.
+load database by [filename].
+then use listing. to show contents of database.
+make rule by: :- sign
+make object: functionname(variable1, variable2).
+some keywords: ','-also and '.'-end and upper case letters-variable. how to quot: ''romeo dog
+';' to make another result, use like enter key. 
+
+
+
