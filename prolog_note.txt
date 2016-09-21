@@ -8,4 +8,6 @@ some keywords: ','-also and '.'-end and upper case letters-variable. how to quot
 ';' to make another result, use like enter key. 
 
 
+atom: '(' stands for ( item. 
+also a charactor is same as 'charactor'.
 
