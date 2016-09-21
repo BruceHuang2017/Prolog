@@ -7,6 +7,7 @@ make object: functionname(variable1, variable2).
 some keywords: ','-also and '.'-end and upper case letters-variable. how to quot: ''romeo dog
 ';' to make another result, use like enter key. 
 
+go through prolog tutorial is important. 
 
 atom: '(' stands for ( item. 
 also a charactor is same as 'charactor'.
