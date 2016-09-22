@@ -17,3 +17,6 @@ go through prolog tutorial is important.
 atom: '(' stands for ( item. 
 also a charactor is same as 'charactor'.
 The meaning of double quotes depends on the Prolog flag double_quotes:
+
+swipl is better. 
+notrace, nodebug. 
