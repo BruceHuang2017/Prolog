@@ -1,3 +1,8 @@
+// this is to open swi prolog.
+brew install swi-prolog
+swipl 
+
+// this is to open gnu prolog
 shell: gprolog to open prolog.
 prolog: "halt." to exit prolog.
 load database by [filename].
