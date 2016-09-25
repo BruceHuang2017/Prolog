@@ -1,3 +1,7 @@
+And Xsb prolog is the compiler.
+//sxb
+sheel script: XSB/bin/xsb
+
 // this is to open swi prolog.
 brew install swi-prolog
 swipl 
