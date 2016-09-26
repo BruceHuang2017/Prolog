@@ -1,32 +1,27 @@
-trans(97, id).
-trans(98, id).
-trans(99, id).
-
-trans(40, lt_paren).
-trans(41, rt_paren).
-trans(43, add_op).
-trans(42, mul_op).
-trans(45, sub_op).
-trans(47, div_op).
-trans(94, pow_op).
-trans(61, equal_sign).
-
-trans(48, 0).
-trans(49, 1).
-trans(50, 2).
-trans(51, 3).
-trans(52, 4).
-trans(53, 5).
-trans(54, 6).
-trans(55, 7).
-trans(56, 8).
-trans(57, 9).
-
 tokenizer([], []).
-tokenizer([StrH | StrT], Result):-
-    del([32], StrT, StrT),
-    trans(StrH, X),
-    append(Result, X, Result),
-    tokenizer(StrT, Result).
 
+tokenizer([97 | T], [id | R]) :- tokenizer(T, R).
+tokenizer([98 | T], [id | R]) :- tokenizer(T, R).
+tokenizer([99 | T], [id | R]) :- tokenizer(T, R).
 
+tokenizer([40 | T], [lt_paren | R]) :- tokenizer(T, R).
+tokenizer([41 | T], [rt_paren | R]) :- tokenizer(T, R).
+tokenizer([42 | T], [mul_op | R]) :- tokenizer(T, R).
+tokenizer([43 | T], [add_op | R]) :- tokenizer(T, R).
+tokenizer([45 | T], [sub_op | R]) :- tokenizer(T, R).
+tokenizer([47 | T], [div_op | R]) :- tokenizer(T, R).
+tokenizer([61 | T], [equal_sign | R]) :- tokenizer(T, R).
+tokenizer([94 | T], [pow_op | R]) :- tokenizer(T, R).
+
+tokenizer([48 | T], [0 | R]) :- tokenizer(T, R).
+tokenizer([49 | T], [1 | R]) :- tokenizer(T, R).
+tokenizer([50 | T], [2 | R]) :- tokenizer(T, R).
+tokenizer([51 | T], [3 | R]) :- tokenizer(T, R).
+tokenizer([52 | T], [4 | R]) :- tokenizer(T, R).
+tokenizer([53 | T], [5 | R]) :- tokenizer(T, R).
+tokenizer([54 | T], [6 | R]) :- tokenizer(T, R).
+tokenizer([55 | T], [7 | R]) :- tokenizer(T, R).
+tokenizer([56 | T], [8 | R]) :- tokenizer(T, R).
+tokenizer([57 | T], [9 | R]) :- tokenizer(T, R).
+
+tokenizer([32 | T], R) :- tokenizer(T, R).
